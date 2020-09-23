@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="build/css/styles.css">
+  <title>Test</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__logo">
+        Task List
+      </h1>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="cases">
+        <h2 class="cases__title title">
+          Список дел
+        </h2>
+        <div class="cases__list">
+          <div class="cases__empty hidden">
+            Список дел пуст..
+          </div>
+          <div class="cases__buttons hidden">
+            <button class="cases__btn start-all">Начать все</button>
+            <button class="cases__btn complete-all">Выполнить все</button>
+            <button class="cases__btn delete-all">Удалить все</button>
+          </div>
+        </div>
+        <!-- <article class="cases__item">
+          <h3 class="cases__subtitle subtitle">
+            title
+          </h3>
+          <p class="cases__descr">
+            description
+          </p>
+          <span class="cases__item-buttons">
+            <button class="cases__item-btn start-btn"></button>
+            <button class="cases__item-btn complete-btn"></button>
+            <button class="cases__item-btn delete-btn"></button>
+          </span>
+        </article> -->
+      </section>
+      <section class="create">
+        <h2 class="create__title title">
+          Добавить дело
+        </h2>
+        <form class="create__form" onsubmit="return false;">
+          <div class="create__container">
+            <input type="text" id="input" class="create__input" required>
+            <label for="input" class="create__label">Title</label>
+          </div>
+          <div class="create__container">
+            <textarea id="textarea" class="create__textarea" rows="10"></textarea>
+            <label for="textarea" class="create__label">Описание</label>
+          </div>
+          <button class="create__btn" type="submit">Добавить дело</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="build/js/main.js"></script>
+</body>
+</html>
